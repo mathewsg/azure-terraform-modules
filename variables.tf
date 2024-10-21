@@ -1,11 +1,14 @@
 variable "location" {
-  type = string
+  type        = string
+  description = "The Resource group Location"
 }
 
 variable "name" {
-  type = string
+  type        = string
+  description = "Resource Group Name"
 }
 
 variable "tags" {
-  type = map(string)
+  type        = map(string)
+  description = "Resource Group Tags"
 }
