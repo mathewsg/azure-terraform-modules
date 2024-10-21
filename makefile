@@ -12,8 +12,8 @@ fmt:
 	terraform -chdir=${ROOT_DIR} fmt
 
 lint:
-	tflint --chdir=${ROOT_DIR} --init
-	tflint --chdir=${ROOT_DIR}  --config=./.tflint.hcl
+	tflint --chdir=${ROOT_DIR} --init --config=../../.tflint.hcl
+	tflint --chdir=${ROOT_DIR}  
 
 
 plan:
