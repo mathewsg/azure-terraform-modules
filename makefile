@@ -20,6 +20,9 @@ plan:
 	terraform -chdir=${ROOT_DIR} plan
 apply:
 	terraform -chdir=${ROOT_DIR} apply  --auto-approve
+
+destroy:
+	terraform -chdir=${ROOT_DIR} destroy  --auto-approve
  
 clean:
 	@echo "Cleaning up..."
