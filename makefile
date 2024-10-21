@@ -34,5 +34,5 @@ e2e_test: init fmt lint plan clean
 
 e2e_deploy: init lint plan apply
 
-docs:
+module-docs:
 	terraform-docs markdown table --output-file README.md --output-mode inject ./ --header-from ./_header.md  --footer-from ./_footer.md
