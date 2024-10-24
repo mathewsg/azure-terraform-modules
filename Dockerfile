@@ -25,3 +25,9 @@ RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
 # Installing TF Lint
 RUN curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash
+
+# Installing Terrform docs
+RUN curl -Lo ./terraform-docs.tar.gz https://github.com/terraform-docs/terraform-docs/releases/download/v0.19.0/terraform-docs-v0.19.0-$(uname)-amd64.tar.gz \
+    && tar -xzf terraform-docs.tar.gz \
+    && chmod +x terraform-docs \
+    && mv terraform-docs /usr/bin/terraform-docs
